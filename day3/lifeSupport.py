@@ -7,10 +7,6 @@ with open('input') as fh:
 
 listValues = np.array(listValues)
 
-# If the sum of each column > half then '1' is more common
-halfValue = int(listValues.shape[0])/2
-sumValues = np.sum(listValues, axis=0)
-
 bitConversion = 2 ** np.arange(listValues.shape[1]-1, -1, -1)
 
 listIndices = [True]*listValues.shape[0]
